@@ -18,6 +18,17 @@ body.scroll{animation: scroll 1s both;}
 
 }
 
+@media (max-width: 1024px) {
+
+    @keyframes scroll{
+
+        0%{margin-top: 0}
+        100%{margin-top: -100px;}
+
+    }
+
+}
+
 /* 본문바로가기 */
 .skipnav {position:absolute;z-index:1999;top:-100px;width:100%;padding:0;list-style:none;font-size:14px;}
 .skipnav li {position:relative;top:0;left:0;width:100%}
@@ -50,9 +61,7 @@ body.scroll{animation: scroll 1s both;}
 
 /* header */
 #header{position: absolute; top:0; left:0; right:0; transition: all 1s; z-index: 99;}
-
-#header.scroll{margin-top: -230px}
-
+#header.scroll{margin-top: -230px;}
 #header .container{position: relative;}
 #header .header{position: relative;}
 #header .header_top{position: relative; overflow: hidden;}

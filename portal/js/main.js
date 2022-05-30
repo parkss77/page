@@ -116,7 +116,14 @@ $(document).ready(function() {
             $('body').removeClass('scroll');
             $('#header').removeClass('scroll');
         }
+    });
 
+    $(window).on('load resize', function() {
+        var windowWidth = $(this).width();
+        if (windowWidth < 1024) {
+
+
+        }
     });
 
 });
