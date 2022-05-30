@@ -6,6 +6,15 @@ $(document).ready(function() {
         }, 600);
     });
 
+/*
+    $('#header .header_top .close').click(function() {
+        if ($('#header .header_top').css('display') == 'none') {} else {
+            $('#header .header_top').hide();
+            $('main').css('padding-top', '100px');
+        }
+    });
+*/
+
     /* sitemap */
     var btn = document.querySelector('.sitemap_btn'),
         sitemap = document.querySelector('.sitemap_box'),
