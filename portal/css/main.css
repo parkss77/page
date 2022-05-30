@@ -15,7 +15,7 @@ main{padding-top: 230px;}
 #section1 .box .img_box img{}
 #section1 .box .text_box{position: relative; margin-top: 187px;}
 #section1 .box .text_box h2{letter-spacing: -2px;}
-#section1 .box .text_box p span{display: block; font-weight: 300; font-size: 42px; line-height: 64px; animation: effect 2s; }
+#section1 .box .text_box p span{display: block; font-weight: 300; font-size: 42px; line-height: 64px; animation: effect 2s both; }
 #section1 .box .text_box p strong{display: block; opacity: 0; font-weight: 500; font-size: 60px; line-height: 88px; animation: effect 2s .3s both;}
 
 @keyframes effect {

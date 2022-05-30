@@ -118,12 +118,4 @@ $(document).ready(function() {
         }
     });
 
-    $(window).on('load resize', function() {
-        var windowWidth = $(this).width();
-        if (windowWidth < 1024) {
-
-
-        }
-    });
-
 });
