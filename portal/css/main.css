@@ -79,9 +79,18 @@ main{padding-top: 230px;}
 }
 
 /* section2 */
-#section2{position: relative;}
+#section2{opacity: 0; position: relative; transition: all 1s; transition-duration: 2s;}
+#section2.effect{animation: effect2 2s .3s both;}
+
+@keyframes effect2 {
+
+    0%{transform: translateY(40px); opacity: 0;}
+    100%{transform: translateY(0); opacity: 1;}
+
+}
+
 #section2 .left{position: absolute; top: -230px; width: 440px; height: 410px; z-index: 1;}
-#section2 .left::before{content: ''; position: absolute; top:0; left:-243px; bottom: 0; right:0; background: #fff; z-index: -1;}
+#section2 .left::before{content: ''; position: absolute; top:0; left:-252px; bottom: 0; right:0; background: #fff; z-index: -1;}
 #section2 .left h3{display: inline-block; position: relative; margin: 50px 0 40px ;font-size: 36px; font-weight: 500; }
 #section2 .left h3::after{content: ''; position: absolute; top:-14px; right:-14px; width: 14px; height: 14px; background-size: 960px 240px; background: url(../images/common/sp_new.png)no-repeat -353px -33px;}
 #section2 .left dl{overflow: hidden; margin-bottom: 25px;}

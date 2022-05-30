@@ -1,5 +1,36 @@
 $(document).ready(function() {
 
+    $(window).on('load', function() {
+        AOS.init({
+            duration: 700,
+            delay: 100,
+            once: false,
+        });
+    });
+
+    $('#section2').addClass('effect');
+
+    $(window).on('load resize', function() {
+        var windowWidth = $(this).width();
+        if (windowWidth < 1024) {
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 0) {
+                    $("#section2 .search_box img").removeClass("animate__headShake");
+                } else {
+                    $("#section2 .search_box img").removeClass("animate__headShake");
+                }
+            });
+        } else {
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 90) {
+                    $("#section2 .search_box img").addClass("animate__headShake");
+                } else {
+                    $("#section2 .search_box img").removeClass("animate__headShake");
+                }
+            });
+        }
+    });
+
     $('#section1 .slick').on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;
         $('#section1 .control .count').html('<em>' + i + '</em>' + slick.slideCount);
