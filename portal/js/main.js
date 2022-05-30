@@ -4,7 +4,6 @@ $(document).ready(function() {
         AOS.init({
             duration: 700,
             delay: 100,
-            once: false,
         });
     });
 
@@ -109,23 +108,15 @@ $(document).ready(function() {
         }, ]
     });
 
-    /*
-        function scroll() {
-            $(window).on('mousewheel load', function(e) {
-                if (e.originalEvent.wheelDelta < 0) {
-                    $('html, body').stop().animate({
-                        scrollTop: '230'
-                    }, 300);
-                    $('#header').addClass('scroll');
-                } else {
-                    $('html,body').stop().animate({
-                        scrollTop: '0'
-                    }, 300);
-                    $('#header').removeClass('scroll');
-                }
-                return false;
-            });
+    $("html, body").on('mousewheel load', function(e) {
+        if (e.originalEvent.wheelDelta < 0) {
+            $('body').addClass('scroll');
+            $('#header').addClass('scroll');
+        } else {
+            $('body').removeClass('scroll');
+            $('#header').removeClass('scroll');
         }
-    */
+
+    });
 
 });

@@ -8,6 +8,7 @@ main{padding-top: 230px;}
 }
 
 /* section1 */
+#section1{}
 #section1 .box{}
 #section1 .box .slide{position: relative; height: 700px; overflow: hidden;}
 #section1 .box .img_box{position: absolute; width: 1920px; height: 700px; left: 50%; margin-left: -960px; }

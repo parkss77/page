@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    $(window).on('load', function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 600);
+    });
+
     /* sitemap */
     var btn = document.querySelector('.sitemap_btn'),
         sitemap = document.querySelector('.sitemap_box'),
@@ -46,6 +52,8 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: 0
         }, 500);
+        $('body').removeClass('scroll');
+        $('#header').removeClass('scroll');
     });
 
     /* top

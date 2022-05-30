@@ -9,6 +9,15 @@ textarea{appearance:none; -webkit-appearance:none; -moz-appearance:none;}
 input, textarea, select{border-radius: 0; -webkit-border-radius: 0; -moz-border-radius:0;}
 main{overflow: hidden;}
 
+body.scroll{animation: scroll 1s both;}
+
+@keyframes scroll{
+
+    0%{margin-top: 0}
+    100%{margin-top: -230px;}
+
+}
+
 /* 본문바로가기 */
 .skipnav {position:absolute;z-index:1999;top:-100px;width:100%;padding:0;list-style:none;font-size:14px;}
 .skipnav li {position:relative;top:0;left:0;width:100%}
@@ -41,7 +50,9 @@ main{overflow: hidden;}
 
 /* header */
 #header{position: absolute; top:0; left:0; right:0; transition: all 1s; z-index: 99;}
-#header.scroll{top:-500px;}
+
+#header.scroll{margin-top: -230px}
+
 #header .container{position: relative;}
 #header .header{position: relative;}
 #header .header_top{position: relative; overflow: hidden;}
@@ -183,6 +194,14 @@ main{overflow: hidden;}
     #footer address .address{display: inline-block;}
     #footer address .address li{display: block; text-align: left; margin: 0 0 8px; }
     #footer address p{margin-top: 26px;}
+
+}
+
+@media (max-width: 414px) {
+
+    #footer .footer_logo{margin: 0 0 120px;}
+    #footer .link li{display: block; text-align: center; margin:0 0 15px;}
+    #footer .link li:last-child{margin-bottom: 0;}
 
 }
 
