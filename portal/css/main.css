@@ -166,11 +166,11 @@ main{padding-top: 230px;}
 
         }
 
-
 }
 
 @media (max-width: 860px) {
 
+    #section2 .right.effect{animation: effect2  2s .1s both;}
     #section2{margin-top: -150px;}
     #section2 .left{position: relative; width: 100%; top:0;}
     #section2 .left::before{left:-20px; right: -20px;}
