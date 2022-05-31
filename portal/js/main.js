@@ -7,7 +7,7 @@ $(document).ready(function() {
         });
     });
 
-    $('#section2').addClass('effect');
+    $('#section2').addClass('effect2');
 
     $(window).on('load resize', function() {
         var windowWidth = $(this).width();
@@ -27,6 +27,22 @@ $(document).ready(function() {
                     $("#section2 .search_box img").removeClass("animate__headShake");
                 }
             });
+        }
+    });
+
+    $(window).on('load resize', function() {
+        var windowWidth = $(this).width();
+        if (windowWidth > 861) {
+            $('#section2 .right').addClass('effect2');
+        }
+    });
+
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 200) {
+            $("#section2 .right").addClass('effect');
+            $("#section2 .right").removeClass('effect2');
+        } else {
+            $("#section2 .right").removeClass('effect');
         }
     });
 
@@ -107,15 +123,16 @@ $(document).ready(function() {
             }
         }, ]
     });
-
-    $("html, body").on('mousewheel load', function(e) {
-        if (e.originalEvent.wheelDelta < 0) {
-            $('body').addClass('scroll');
-            $('#header').addClass('scroll');
-        } else {
-            $('body').removeClass('scroll');
-            $('#header').removeClass('scroll');
-        }
-    });
+    /*
+        $("html, body").on('mousewheel load', function(e) {
+            if (e.originalEvent.wheelDelta < 0) {
+                $('body').addClass('scroll');
+                $('#header').addClass('scroll');
+            } else {
+                $('body').removeClass('scroll');
+                $('#header').removeClass('scroll');
+            }
+        });
+    */
 
 });

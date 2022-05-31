@@ -54,9 +54,14 @@ main{padding-top: 230px;}
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
 
     #section1 .control .box{bottom: 172px;}
+
+}
+
+@media (max-width: 768px) {
+
     #section1 .box .text_box{margin-top: 108px;}
     #section1 .box .text_box p span{font-size: 30px; line-height: 44px;}
     #section1 .box .text_box p strong{font-size: 48px; line-height: 66px;}
@@ -81,9 +86,16 @@ main{padding-top: 230px;}
 
 /* section2 */
 #section2{opacity: 0; position: relative; transition: all 1s; transition-duration: 2s;}
-#section2.effect{animation: effect2 2s .3s both;}
+.effect{animation: effect2 2s .3s both;}
+.effect2{animation: effect3 2s .3s both;}
 
 @keyframes effect2 {
+
+    0%{transform: translateY(40px); opacity: 0;}
+    100%{transform: translateY(0); opacity: 1;}
+
+}
+@keyframes effect3 {
 
     0%{transform: translateY(40px); opacity: 0;}
     100%{transform: translateY(0); opacity: 1;}
@@ -145,12 +157,24 @@ main{padding-top: 230px;}
 
 }
 
+@media (min-width: 861px) {
+
+    #section2 .right.effect{}
+    @keyframes effect2 {
+        0%{transform: translateY(0); opacity: 1;}
+        100%{transform: translateY(0); opacity: 1;}
+
+        }
+
+
+}
+
 @media (max-width: 860px) {
 
     #section2{margin-top: -150px;}
     #section2 .left{position: relative; width: 100%; top:0;}
     #section2 .left::before{left:-20px; right: -20px;}
-    #section2 .right{float: none; width: 100%; padding: 64px 0 64px 255px;}
+    #section2 .right{opacity: 0; float: none; width: 100%; padding: 64px 0 64px 255px;}
     #section2 .right::before{left:-20px; right: -20px;}
 
 }
