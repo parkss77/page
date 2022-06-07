@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+/*
     $(window).on('load', function() {
         $('html, body').animate({
             scrollTop: 0
