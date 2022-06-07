@@ -1,19 +1,23 @@
 $(document).ready(function() {
-/*
-    $(window).on('load', function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 600);
-    });
-
     /*
-        $('#header .header_top .close').click(function() {
-            if ($('#header .header_top').css('display') == 'none') {} else {
-                $('#header .header_top').hide();
-                $('main').css('padding-top', '100px');
-            }
+        $(window).on('load', function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 600);
         });
-    */
+
+        /*
+            $('#header .header_top .close').click(function() {
+                if ($('#header .header_top').css('display') == 'none') {} else {
+                    $('#header .header_top').hide();
+                    $('main').css('padding-top', '100px');
+                }
+            });
+        */
+
+    if (document.querySelector('.header_top').style.display == 'none') {} else {
+        document.getElementById('main').style.padding = '100px 0 0';
+    }
 
     /* sitemap */
     var btn = document.querySelector('.sitemap_btn'),

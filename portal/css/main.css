@@ -8,7 +8,7 @@ main{padding-top: 230px;}
 }
 
 /* section1 */
-#section1{}
+#section1{position:relative; z-index: 1;}
 #section1 .box{}
 #section1 .box .slide{position: relative; height: 700px; overflow: hidden;}
 #section1 .box .img_box{position: absolute; width: 1920px; height: 700px; left: 50%; margin-left: -960px; }
@@ -26,7 +26,7 @@ main{padding-top: 230px;}
 }
 
 #section1 .control .container{position: relative;}
-#section1 .control .box{position: absolute; /*width: 206px;*/  width: 188px; height: 15px; left:0; bottom: 260px; z-index: 98; }
+#section1 .control .box{position: absolute; /*width: 206px;*/  width: 188px; height: 15px; left:0; bottom: 260px; z-index: 999; }
 #section1 .control .count{position: absolute; left:0; right: 0; top: 50%; transform: translateY(-50%); font-size: 18px; font-weight: 800;}
 #section1 .control .count em{display: inline-block; margin-right: 140px; color: #1547ff;}
 #section1 .control .dots{display: inline-block; overflow: hidden; height: 2px; /*width: 86%;*/ width: 100px; position: absolute; left: 80px; top:51%; transform: translate(-50%, -50%);}
@@ -85,7 +85,7 @@ main{padding-top: 230px;}
 }
 
 /* section2 */
-#section2{opacity: 0; position: relative; transition: all 1s; transition-duration: 2s;}
+#section2{opacity: 0; position: relative; transition: all 1s; transition-duration: 2s; z-index: 1;}
 .effect{animation: effect2 2s .3s both;}
 .effect2{animation: effect3 2s .3s both;}
 
@@ -113,7 +113,8 @@ main{padding-top: 230px;}
 #section2 .left > span{display: block; position: relative; padding:24px 0 0 30px; font-weight: 300; color: #666; line-height: 22px;}
 #section2 .left > span::before{content: ''; position: absolute; top:25px; left:0; width: 20px; height: 20px; background-size: 960px 240px; background: url(../images/common/sp_new.png)no-repeat -430px -30px;}
 #section2 .left .view{display:block; position: absolute; bottom: 0; right:0; width: 80px; height: 80px; background: linear-gradient(45deg, #00a6ff, #1431ff);}
-#section2 .left .view::after{content: ''; width: 30px; height: 30px; position: absolute; top: 26px; left: 26px; background-size: 960px 240px; background: url(../images/common/sp_new.png)no-repeat -505px -25px;}
+#section2 .left .view::after{content: ''; width: 30px; height: 30px; position: absolute; top: 26px; left: 26px; background-size: 960px 240px; background: url(../images/common/sp_new.png)no-repeat -505px -25px; transition: all .3s;}
+#section2 .left .view:hover::after{transform: rotateY(180deg);}
 #section2 .right{position: relative; float: right; width: calc(100% - 440px); padding: 64px 0 64px 360px;}
 #section2 .right::before{content: ''; position: absolute; top:0; bottom: 0; right:-253px; left:0; background: #f9f9f9;}
 #section2 .right .search_box{position: relative; width: 100%; height: 52px;}
@@ -241,7 +242,8 @@ main{padding-top: 230px;}
 #section4 ul.list li a h4{margin-bottom: 26px; height: 88px; line-height: 92px; border-bottom: 1px solid #ddd; font-size: 20px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 #section4 ul.list li a p{margin-bottom: 36px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 48px; line-height: 24px; overflow: hidden; text-overflow: ellipsis;}
 #section4 ul.list li a span{font-weight: 300; color: #ccc;}
-#section4 .view{display: block; margin: 0 auto; width: 200px; height: 50px; line-height: 50px; font-weight: 500; text-align: center; border: 2px solid #333;}
+#section4 .view{display: block; margin: 0 auto; width: 200px; height: 50px; line-height: 50px; font-weight: 500; text-align: center; border: 2px solid #333; transition: all .3s;}
+#section4 .view:hover{color: #fff; background: #333;}
 
 @media (max-width: 1199px) {
 

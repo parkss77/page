@@ -91,7 +91,7 @@ $(document).ready(function() {
         nextArrow: $('#section1 .next'),
         draggable: true,
         infinite: true,
-        fade: false,
+        fade: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         pauseOnHover: false,

@@ -65,7 +65,7 @@ body.scroll{animation: scroll 1s both;}
 /* #header.scroll{margin-top: -230px;} */
 #header .container{position: relative;}
 #header .header{position: relative;}
-#header .header_top{position: relative; overflow: hidden;}
+#header .header_top{display: none; position: relative; overflow: hidden;}
 #header .header_top::after{content: ''; width: 1920px; height: 100%; position: absolute; top:0; left: 50%; margin-left: -960px; background: #3c60ff; z-index: -1;}
 #header .header_top .header_top_img img{display: block;}
 #header .header_top .close{padding-right: 26px; position: absolute; top:50%; transform: translateY(-50%); right:0; font-weight: 300; letter-spacing: -2px;}
