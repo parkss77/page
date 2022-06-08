@@ -8,6 +8,7 @@ input:not([type=radio]):not([type=checkbox]),
 textarea{appearance:none; -webkit-appearance:none; -moz-appearance:none;}
 input, textarea, select{border-radius: 0; -webkit-border-radius: 0; -moz-border-radius:0;}
 main{overflow: hidden;}
+
 /*
 body.scroll{animation: scroll 1s both;}
 
@@ -29,6 +30,23 @@ body.scroll{animation: scroll 1s both;}
 
 }
 */
+
+main.scroll{animation: scroll 1s both;}
+
+@media (max-width: 1199px) {
+
+    main{padding-top: 100px!important;}
+
+}
+
+@media (min-width: 1199px) {
+    @keyframes scroll{
+
+        0%{padding-top: 230px}
+        100%{padding-top: 100px;}
+
+    }
+}
 
 /* 본문바로가기 */
 .skipnav {position:absolute;z-index:1999;top:-100px;width:100%;padding:0;list-style:none;font-size:14px;}
@@ -62,7 +80,7 @@ body.scroll{animation: scroll 1s both;}
 
 /* header */
 #header{position: absolute; top:0; left:0; right:0; transition: all 1s; z-index: 99;}
-/* #header.scroll{margin-top: -230px;} */
+#header.scroll{margin-top: -230px;}
 #header .container{position: relative;}
 #header .header{position: relative;}
 #header .header_top{position: relative; overflow: hidden;}

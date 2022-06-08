@@ -8,8 +8,25 @@ $(document).ready(function() {
 */
 
     if ($('#header .header_top').css('display') == 'none') {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 60) {
+                $('#header').addClass('scroll');
+            } else {
+                $('#header').removeClass('scroll');
+            }
+        });
+
         $('main').css('padding-top', '100px');
     } else {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 60) {
+                $('#header').addClass('scroll');
+                $('main').addClass('scroll');
+            } else {
+                $('#header').removeClass('scroll');
+                $('main').removeClass('scroll');
+            }
+        });
         $('main').css('padding-top', '230px');
     }
 
