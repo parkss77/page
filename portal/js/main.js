@@ -1,6 +1,12 @@
 $(document).ready(function() {
 
     $(window).on('load', function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 600);
+    });
+
+    $(window).on('load', function() {
         AOS.init({
             duration: 700,
             delay: 100,

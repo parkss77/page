@@ -6,7 +6,7 @@ main{padding-top: 100px;}
 
 #sub .sub_box{position: relative; max-width: 1800px; height: 400px; margin: 0 auto; overflow: hidden;}
 #sub .sub_box img{width: 1800px; height: 400px; position: absolute; top:0; left: 50%; margin-left: -900px; transform:scale(1.2); transition:all 3s;}
-#sub .sub_box.active img{transform:scale(1); transition:all 3s;}
+#sub .sub_box.active img{transform:scale(1); transition:all 5s;}
 #sub .sub_box h2{ position: relative; padding-top: 239px; font-size: 50px; font-weight: 500; color: #111; animation: effect 2s;}
 
 @keyframes effect {

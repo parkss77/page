@@ -1,11 +1,4 @@
 $(document).ready(function() {
-    /*
-        $(window).on('load', function() {
-            $('html, body').animate({
-                scrollTop: 0
-            }, 600);
-        });
-*/
 
     if ($('#header .header_top').css('display') == 'none') {
         $(window).scroll(function() {
