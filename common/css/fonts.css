@@ -35,3 +35,12 @@
           url(fonts/SCDream6.woff) format('woff'),
           url(fonts/SCDream6.otf) format('opentype');
    }
+
+   @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 600;
+      src: url(fonts/Roboto-Bold.woff2) format('woff2'),
+           url(fonts/Roboto-Bold.woff) format('woff'),
+           url(fonts/Roboto-Bold.otf) format('opentype');
+    }
