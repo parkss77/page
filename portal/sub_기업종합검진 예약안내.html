@@ -754,7 +754,7 @@
                     <div class="content_box">
                         <a href="#A-Contents-focus" id="A-Contents-focus" class="blind">본문 시작</a>
                         <div class="content">
-                            <div class="sub5_2">
+                            <div class="sub5">
                                 <div class="top">
                                     <h2>
                                         온라인 기업종합검진 예약안내
@@ -767,26 +767,186 @@
                                 </div>
                                 <!-- //top -->
 
-                                <div class="info">
-                                    <div>
-
+                                <div class="info clearfix">
+                                    <div class="clearfix">
+                                        <div class="text">
+                                            <label for="company">업체명</label>
+                                        </div>
+                                        <input id="company" type="text" placeholder="회사명">
                                     </div>
-                                    <div>
-
+                                    <div class="clearfix">
+                                        <div class="text">
+                                            <label for="booker">예약자명</label>
+                                        </div>
+                                        <input id="booker" type="text" placeholder="홍길동">
                                     </div>
-                                    <div>
-
+                                    <div class="clearfix">
+                                        <div class="text">
+                                            예약자 연락처
+                                        </div>
+                                        <div class="input_box">
+                                            <div class="box">
+                                                <label for="contact1"><span class="blind">전화번호 앞자리</span></label>
+                                                <input id="contact1" type="text" placeholder="010">
+                                            </div>
+                                            <div class="box">
+                                                <label for="contact2"><span class="blind">전화번호 중간자리</span></label>
+                                                <input id="contact2" type="text" placeholder="1234">
+                                            </div>
+                                            <div class="box">
+                                                <label for="contact3"><span class="blind">전화번호 뒷자리</span></label>
+                                                <input id="contact3" type="text" placeholder="5678">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- //info -->
 
-                                <div class="box">
+                                <div class="box clearfix">
+
+                                    <ul class="list">
+                                        <li class="active">
+                                            <a href="#">내과</a>
+                                        </li>
+                                        <li><a href="#">일반외과</a></li>
+                                        <li><a href="#">정형외과</a></li>
+                                        <li><a href="#">신경외과</a></li>
+                                        <li><a href="#">산부인과</a></li>
+                                        <li><a href="#">소아과</a></li>
+                                        <li><a href="#">방사선과</a></li>
+                                        <li><a href="#">마취통증과</a></li>
+                                    </ul>
+                                    <!-- //list -->
+
+                                    <div class="reservation clearfix">
+                                        <div class="calendar">
+                                            <div class="calendar_top">
+                                                <button class="prev"><span class="blind">이전달</span></button>
+                                                <span>
+                                                    2022년 6월
+                                                </span>
+                                                <button class="next"><span class="blind">다음달</span></button>
+                                            </div>
+                                            <!-- //calendar_top -->
+
+                                            <table class="calendar_tb">
+                                                <caption class="blind">날짜 선택</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th>일</th>
+                                                        <th>월</th>
+                                                        <th>화</th>
+                                                        <th>수</th>
+                                                        <th>목</th>
+                                                        <th>금</th>
+                                                        <th>토</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"></a></td>
+                                                        <td><a href="#"></a></td>
+                                                        <td><a href="#"></a></td>
+                                                        <td><a href="#">1</a></td>
+                                                        <td><a href="#">2</a></td>
+                                                        <td><a href="#">3</a></td>
+                                                        <td><a href="#">4</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">5</a></td>
+                                                        <td><a href="#">6</a></td>
+                                                        <td><a href="#">7</a></td>
+                                                        <td><a href="#">8</a></td>
+                                                        <td><a href="#">9</a></td>
+                                                        <td><a href="#">10</a></td>
+                                                        <td><a href="#">11</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">12</a></td>
+                                                        <td><a href="#">13</a></td>
+                                                        <td><a href="#">14</a></td>
+                                                        <td><a href="#">15</a></td>
+                                                        <td class="select"><a href="#">16</a></td>
+                                                        <td><a href="#">17</a></td>
+                                                        <td><a href="#">18</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">19</a></td>
+                                                        <td><a href="#">20</a></td>
+                                                        <td><a href="#">21</a></td>
+                                                        <td><a href="#">22</a></td>
+                                                        <td><a href="#">23</a></td>
+                                                        <td><a href="#">24</a></td>
+                                                        <td><a href="#">25</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">26</a></td>
+                                                        <td><a href="#">27</a></td>
+                                                        <td><a href="#">28</a></td>
+                                                        <td><a href="#">29</a></td>
+                                                        <td><a href="#">30</a></td>
+                                                        <td><a href="#"></a></td>
+                                                        <td><a href="#"></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- //calendar_tb -->
+
+                                        </div>
+                                        <!-- //calendar -->
+
+                                        <div class="time">
+                                            <ul class="time_list">
+                                                <li>
+                                                    <a href="#">9:00</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">9:30</a>
+                                                </li>
+                                                <li class="select">
+                                                    <a href="#">10:00</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">10:30</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">11:00</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">11:30</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">12:00</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">12:30</a>
+                                                </li>
+                                            </ul>
+                                            <!-- //time_list -->
+
+                                            <ul class="text">
+                                                <li>평일 : 9:00 ~ 18:00</li>
+                                                <li>토요일 및 공휴일 : 09:00 ~ 15:00</li>
+                                                <li>점심시간 : 12:30 ~ 13:30</li>
+                                            </ul>
+                                            <!-- //text -->
+
+                                        </div>
+                                        <!-- //time -->
+
+                                    </div>
+                                    <!-- //reservation -->
 
                                 </div>
                                 <!-- //box -->
 
+                                <div class="btn_box1">
+                                    <a href="#" class="cancellation">취소하기</a>
+                                    <a href="#">예약하기</a>
+                                </div>
+
                             </div>
-                            <!-- //sub1_4 -->
+                            <!-- //sub5 -->
 
                         </div>
                         <!-- //content -->

@@ -263,8 +263,8 @@ span.listLv4:before,
 #sub .content_wrap .content .sub_info::after{content: ''; width: 1920px; position: absolute; top:0; bottom: 0; left: 50%; margin-left: -960px; background: #ebeae7; z-index: -1;}
 
 /* color */
-#sub .content_wrap .content .color{color: #0b6aff; font-weight: 400;}
-#sub .content_wrap .content .color2{color: #ff3b30; font-weight: 400;}
+#sub .content_wrap .content .color{color: #0b6aff!important; font-weight: 400;}
+#sub .content_wrap .content .color2{color: #ff3b30!important; font-weight: 400;}
 
 /* 오시는 길 */
 #sub .content_wrap .content .sub4_2 .map_top{margin-bottom: 37px;}
@@ -549,9 +549,9 @@ span.listLv4:before,
 #sub .content_wrap .content .sub1 .box2 .text_box  .list_box ul li{position: relative; padding-left: 15px; margin-bottom: 11px; line-height: 24px; color: #111;}
 #sub .content_wrap .content .sub1 .box2 .text_box  .list_box ul li::before{content: ''; position: absolute; top:10px; left:6px; border-radius: 50%; width: 2px; height: 2px; background: #111;}
 #sub .content_wrap .content .sub1 .box2 .text_box  .list_box ul li:last-child{margin-bottom: 0;}
-#sub .content_wrap .content .sub1 .box:nth-child(2n) .top{background: url(../images/sub/bg1.jpg)no-repeat;}
-#sub .content_wrap .content .sub1 .box:nth-child(2n) .img_box{float: right; margin-right: 0;}
-#sub .content_wrap .content .sub1 .box:nth-child(2n) .text_box{width: calc(100% - 651px); margin-right: 101px;}
+#sub .content_wrap .content .sub1:nth-of-type(2) .box:nth-child(odd) .top{background: url(../images/sub/bg1.jpg)no-repeat;}
+#sub .content_wrap .content .sub1:nth-of-type(2) .box:nth-child(odd) .img_box{float: right; margin-right: 0;}
+#sub .content_wrap .content .sub1:nth-of-type(2) .box:nth-child(odd) .text_box{width: calc(100% - 651px); margin-right: 101px;}
 #sub .content_wrap .content .sub1 .table_box .table{width: 749px;}
 #sub .content_wrap .content .sub1 .table_box .table tbody tr td:last-child{border-bottom: 0}
 #sub .content_wrap .content .sub1 .table_box .table tbody tr:nth-child(1) td:last-child::after{display: none;}
@@ -684,3 +684,144 @@ span.listLv4:before,
 }
 
 /* 기업종합검진 예약안내 */
+#sub .content_wrap .content .sub5{padding: 0 0 100px; max-width: 1200px; width: 100%;position: relative; min-height: 1074px; margin:-60px auto -100px;}
+#sub .content_wrap .content .sub5::after{content:''; position: absolute; top:0; left:50%; margin-left: -960px; width: 1920px; height: 100%; background: #f7f7f7; z-index: -1;}
+#sub .content_wrap .content .sub5 .top{padding: 94px 0 0;}
+#sub .content_wrap .content .sub5 .top h2{margin-bottom: 32px; font-size: 36px; font-weight: 600; color: #111; line-height: 46px;}
+#sub .content_wrap .content .sub5 .top ul{margin-bottom: 50px; padding-bottom: 47px; border-bottom: 1px solid #ddd;}
+#sub .content_wrap .content .sub5 .top ul li{position: relative; padding-left: 8px; margin-bottom: 8px; color:#333; line-height: 22px;}
+#sub .content_wrap .content .sub5 .top ul li:last-child{margin-bottom: 0;}
+#sub .content_wrap .content .sub5 .top ul li::before{content: ''; position: absolute; top:8px; left:0; width: 3px; height: 3px; background: #333; border-radius: 50%;}
+#sub .content_wrap .content .sub5 .top ul li.color2::before{background: #ff3b30;}
+#sub .content_wrap .content .sub5 .top ul li.color::before{background: #0b6aff;}
+#sub .content_wrap .content .sub5 .info{margin-bottom: 40px;}
+#sub .content_wrap .content .sub5 .info > div{position: relative; float: left; margin-right: 50px;}
+#sub .content_wrap .content .sub5 .info > div:last-child{margin-right: 0;}
+#sub .content_wrap .content .sub5 .info > div .text{float: left; padding: 12px 0px; margin-right: 21px; font-weight: 600; color: #111;}
+#sub .content_wrap .content .sub5 .info > div input[type="text"]{height: 40px; padding-left: 15px; color:#666; font-size: 14px; font-weight: 200; border: 1px solid #ccc;}
+#sub .content_wrap .content .sub5 .info > div input[type="text"]::placeholder{color: #666;}
+#sub .content_wrap .content .sub5 .info > div:nth-child(1) input[type="text"]{width:200px;}
+#sub .content_wrap .content .sub5 .info > div:nth-child(2) input[type="text"]{width:147px;}
+#sub .content_wrap .content .sub5 .info > div:nth-child(3) .box{position: relative; float: left; margin-right: 25px;}
+#sub .content_wrap .content .sub5 .info > div:nth-child(3) .box input[type="text"]{float: left; width:80px; }
+#sub .content_wrap .content .sub5 .info > div:nth-child(3) .box:last-child{margin-right: 0;}
+#sub .content_wrap .content .sub5 .info > div:nth-child(3) .box:last-child::after{display: none;}
+#sub .content_wrap .content .sub5 .info > div:nth-child(3) .box::after{content: ''; position: absolute; top:19px; right:-17px; width: 5px; height: 1px; background: #666;}
+#sub .content_wrap .content .sub5 > .box{position: relative; margin-bottom: 50px;}
+#sub .content_wrap .content .sub5 .box .list{position: relative; float: left; margin-right: 3.4%; padding: 42px 49px 55px; /*width: 300px;*/ width: 25%;height: 450px; border: 1px solid #ccc; background: #fff;}
+#sub .content_wrap .content .sub5 .box .list li{margin-bottom: 33px;}
+#sub .content_wrap .content .sub5 .box .list::after{content: ''; position: absolute; top: 50%; transform: translateY(-50%); right:-28px; width: 12px; height: 20px; background: url(../images/sub/icon5.png)no-repeat;}
+#sub .content_wrap .content .sub5 .box .list li.active a{color: #0b6bff;}
+#sub .content_wrap .content .sub5 .box .list li:last-child{margin-bottom: 0;}
+#sub .content_wrap .content .sub5 .box .list li a{padding-left: 11px;  position: relative; display: block; font-weight: 600; color: #333;}
+#sub .content_wrap .content .sub5 .box .list li.active a::after{content: ''; position: absolute; left:0; right:0; bottom: -15px; height: 1px; background: #0b6bff;}
+#sub .content_wrap .content .sub5 .box .list li.active a::before{content: ''; position: absolute; top: -2px; right:0; width: 20px; height: 20px; background: url(../images/sub/icon4.png)no-repeat;}
+#sub .content_wrap .content .sub5 .box .reservation{float: left; width: 71.6%;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar{position: relative; padding: 39px 48px 0; float: left; width: 60.6%; margin-right: 4.7%; /*w0idth: 92.6%;*/ /*width: 520px;*/ height: 450px; border: 1px solid #ccc; background: #fff;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar::after{content: ''; position: absolute; top: 50%; transform: translateY(-50%); right:-28px; width: 12px; height: 20px; background: url(../images/sub/icon5.png)no-repeat;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar .calendar_top{margin-bottom: 20px; text-align: center;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar .calendar_top span{display: inline-block; font-weight: 600; color: #111;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar .calendar_top button{width: 6px; height: 10px; margin: 3px 0;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar .calendar_top button.prev{float: left; width: 6px; height: 10px; background: url(../images/sub/icon3.png)no-repeat;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar .calendar_top button.next{float: right; width: 6px; height: 10px; background: url(../images/sub/icon.png)no-repeat;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar_tb{width: 100%; text-align: center;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar_tb thead tr th{height: 52px; font-weight: 400; color: #333;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar_tb tbody tr td{position: relative; height: 60px; color: #333; z-index: 1;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar_tb tbody tr td a{display:block; color: #333;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar_tb tbody tr td.select{color: #fff;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar_tb tbody tr td.select a{color: #fff;}
+#sub .content_wrap .content .sub5 .box .reservation .calendar_tb tbody tr td.select::after{content: ''; position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%); width: 50px; height: 50px; background:#0b6bff;border-radius: 50%; z-index: -1;}
+#sub .content_wrap .content .sub5 .box .reservation .time{float: left; padding: 38px 40px 34px; width: 34.7%; /*width: 300px;*/ height: 450px; border: 1px solid #ccc; background: #fff;}
+#sub .content_wrap .content .sub5 .box .reservation .time .time_list{max-width: 219px; height: 290px; margin: 0 auto; overflow: auto; border: 1px solid #ddd; border-width: 1px 0; text-align: center;}
+#sub .content_wrap .content .sub5 .box .reservation .time .time_list li{}
+#sub .content_wrap .content .sub5 .box .reservation .time .time_list li a{height: 40px; line-height: 40px; display: block; color: #333;}
+#sub .content_wrap .content .sub5 .box .reservation .time .text{margin-top: 14px;}
+#sub .content_wrap .content .sub5 .box .reservation .time .text li{font-size: 14px; color: #666; line-height: 24px;}
+#sub .content_wrap .content .sub5 .box .reservation .time .time_list li.select a{position: relative; color: #fff; z-index: 1;}
+#sub .content_wrap .content .sub5 .box .reservation .time .time_list li.select a::after{content: ''; position: absolute; top:50%; left: 50%; width: 80px; height: 100%; transform: translate(-50%, -50%); background: #0b6bff; border-radius: 30px; z-index: -1;}
+#sub .content_wrap .content .sub5 .info > div .input_box{float: left;}
+#sub .content_wrap .content .sub5 .btn_box1{display: block; text-align: right;}
+#sub .content_wrap .content .sub5 .btn_box1 .cancellation{margin-right: 17px; border-color:#333; color: #333;}
+#sub .content_wrap .content .sub5 .btn_box1 .cancellation:hover{background: #333; color: #fff;}
+#sub .content_wrap .content .sub5 .box .reservation .time .time_list::-webkit-scrollbar {width: 5px;}
+#sub .content_wrap .content .sub5 .box .reservation .time .time_list::-webkit-scrollbar-thumb {border-radius: 50px; background-color: #aaa;}
+#sub .content_wrap .content .sub5 .box .reservation .time .time_list::-webkit-scrollbar-track {margin: 5px 0; background-color: #eee; border-radius: 50px;}
+
+@media (max-width: 1199px) {
+
+    #sub .content_wrap .content .sub5 .top h2{margin-bottom: 25px; font-size: 32px; line-height: 44px;}
+
+    #sub .content_wrap .content .sub5 .info > div{float: none; width: 100%; margin-bottom: 15px; }
+    #sub .content_wrap .content .sub5 .info > div .text{width: 93px;}
+    #sub .content_wrap .content .sub5 .info > div input[type="text"]{width: calc(100% - 114px)!important;}
+    #sub .content_wrap .content .sub5 .info > div:nth-child(3) .box{width: 31.8%; margin-right: 2.2%}
+    #sub .content_wrap .content .sub5 .info > div:nth-child(3) input[type="text"]{width: 100%!important;}
+    #sub .content_wrap .content .sub5 .info > div .input_box{width: calc(100% - 114px);}
+    #sub .content_wrap .content .sub5 .info > div:nth-child(3) .box::after{left: 103%;}
+
+}
+
+@media (max-width: 1024px) {
+
+    #sub .content_wrap .content .sub5 .top{padding: 66px 0 0;}
+    #sub .content_wrap .content .sub5 .top h2{margin-bottom: 20px; font-size: 28px; line-height: 40px;}
+
+    #sub .content_wrap .content .sub5 .box .list{margin-bottom: 30px;padding: 20px 0; height: auto; float: none; width: 100%; overflow: hidden;}
+    #sub .content_wrap .content .sub5 .box .list li{float: left; width: 12.5%; margin-bottom: 0; }
+    #sub .content_wrap .content .sub5 .box .list::after{display: none;}
+    #sub .content_wrap .content .sub5 .box .reservation{float: none; width: 100%;}
+    #sub .content_wrap .content .sub5 .box .reservation .calendar{width: 65.3%;}
+    #sub .content_wrap .content .sub5 .box .reservation .time{width: 30%;}
+    #sub .content_wrap .content .sub5 .box .list li a{padding: 0; text-align: center;}
+    #sub .content_wrap .content .sub5 .box .list li.active a::before{display: none;}
+    #sub .content_wrap .content .sub5 .box .list li.active a::after{display: none;}
+
+}
+
+@media (max-width: 768px) {
+
+    #sub .content_wrap .content .sub5 .top{padding: 66px 0 0;}
+    #sub .content_wrap .content .sub5 .top h2{font-size: 24px; line-height: 36px;}
+
+    #sub .content_wrap .content .sub5 .box .reservation .calendar{width: 100%; padding: 39px 20px 0; margin-bottom: 20px;}
+    #sub .content_wrap .content .sub5 .box .reservation .time{width: 100%; padding: 38px 20px 34px; }
+    #sub .content_wrap .content .sub5 .box .reservation .time .time_list{max-width: none; width: 100%;}
+    #sub .content_wrap .content .sub5 .box .reservation .calendar::after{display: none;}
+    #sub .content_wrap .content .sub5 .box .list li{float: left; width: 25%; margin-bottom: 20px;}
+    #sub .content_wrap .content .sub5 .box .list li:nth-child(n+5){margin-bottom: 0;}
+    #sub .content_wrap .content .sub5 .box .reservation .calendar_tb tbody tr td.select::after{width: 35px; height:35px;}
+
+}
+
+@media (max-width: 360px) {
+
+    #sub .content_wrap .content .sub5 .box .list li{width: 33.33%;}
+    #sub .content_wrap .content .sub5 .box .list li:nth-child(n+5){margin-bottom: 20px;}
+    #sub .content_wrap .content .sub5 .box .list li:nth-child(n+7){margin-bottom: 0;}
+    #sub .content_wrap .content .sub5 .info > div:nth-child(3) .box input[type="text"]{padding-left:0; text-align: center;}
+
+}
+
+/* 진료예약 */
+#sub .content_wrap .content .sub5 .agree_wrap{margin-bottom: 40px; padding: 0 0 76px; border-bottom: 1px solid #ddd;}
+#sub .content_wrap .content .sub5 .agree_wrap h3{margin: 37px 0 16px; font-weight: 600; color: #111; line-height: 24px; font-size: 18px;}
+#sub .content_wrap .content .sub5 .agree_wrap .agree{padding: 13px 20px; background: #fff; border: 1px solid #ccc;}
+#sub .content_wrap .content .sub5 .agree_wrap .agree .box{padding-right: 200px; height: 225px; overflow: auto; font-size: 14px; font-weight: 200; color: #666; line-height: 22px;}
+#sub .content_wrap .content .sub5 .agree_wrap .agree .box::-webkit-scrollbar {width: 5px;}
+#sub .content_wrap .content .sub5 .agree_wrap .agree .box::-webkit-scrollbar-thumb {border-radius: 50px; background-color: #aaa;}
+#sub .content_wrap .content .sub5 .agree_wrap .agree .box::-webkit-scrollbar-track {margin: 20px 0; background-color: #eee; border-radius: 50px;}
+#sub .content_wrap .content .sub5 .agree_wrap input[type='radio']{width: 16px; height: 16px; vertical-align: -2px;}
+#sub .content_wrap .content .sub5 .agree_wrap label{margin-left: 11px; font-size: 14px; color: #333; cursor: pointer;}
+#sub .content_wrap .content .sub5 .agree_wrap .agree_input{float: right; margin-top: 22px; font-size: 0;}
+#sub .content_wrap .content .sub5 .reference{margin-bottom: 50px; padding: 18px 10px 10px 20px;  border: 1px solid #ccc; background: #fff;}
+#sub .content_wrap .content .sub5 .reference_box h3{margin-bottom: 20px;font-size: 18px; font-weight: 600; color:#111;}
+#sub .content_wrap .content .sub5 .reference textarea{padding-right: 30px; width: 100%; height: 120px; font-size: 14px; font-weight: 200; color:#aaa; overflow: auto;}
+#sub .content_wrap .content .sub5 .reference textarea::-webkit-scrollbar {width: 5px;}
+#sub .content_wrap .content .sub5 .reference textarea::-webkit-scrollbar-thumb {border-radius: 50px; background-color: #aaa;}
+#sub .content_wrap .content .sub5 .reference textarea::-webkit-scrollbar-track {margin: 20px 0; background-color: #eee; border-radius: 50px;}
+
+@media (max-width: 1199px) {
+
+    #sub .content_wrap .content .sub5 .agree_wrap .agree .box{padding-right: 20px;}
+
+}
