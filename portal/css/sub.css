@@ -791,6 +791,8 @@ span.listLv4:before,
     #sub .content_wrap .content .sub5 .box .list li:nth-child(n+5){margin-bottom: 0;}
     #sub .content_wrap .content .sub5 .box .reservation .calendar_tb tbody tr td.select::after{width: 35px; height:35px;}
 
+    #sub .content_wrap .content .sub5 .info > div:nth-child(3) .box::after{left: 102%;}
+
 }
 
 @media (max-width: 360px) {
