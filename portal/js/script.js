@@ -9,7 +9,7 @@ $(document).ready(function() {
             }
         });
 
-        $('main').css('padding-top', '100px');
+        $('main').addClass('pd');
     } else {
         $(window).scroll(function() {
             if ($(this).scrollTop() > 60) {
@@ -20,7 +20,7 @@ $(document).ready(function() {
                 $('main').removeClass('scroll');
             }
         });
-        $('main').css('padding-top', '230px');
+        $('main').removeClass('pd');
     }
 
     /* sitemap */

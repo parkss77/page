@@ -31,13 +31,8 @@ body.scroll{animation: scroll 1s both;}
 }
 */
 
+
 main.scroll{animation: scroll 1s both;}
-
-@media (max-width: 1199px) {
-
-    main{padding-top: 100px!important;}
-
-}
 
 @media (min-width: 1199px) {
     @keyframes scroll{
@@ -47,6 +42,7 @@ main.scroll{animation: scroll 1s both;}
 
     }
 }
+
 
 /* 본문바로가기 */
 .skipnav {position:absolute;z-index:1999;top:-100px;width:100%;padding:0;list-style:none;font-size:14px;}
