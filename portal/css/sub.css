@@ -146,7 +146,7 @@ p.listLv:before,
 div.listLv:before,
 span.listLv:before,
 .listLv >li:before,
-.listLv >dt:before{top: 18px;}
+.listLv >dt:before{top: 14px;}
 
 /* listLv2 */
 .listLv >li > .listLv2{margin-top: 20px;}
@@ -915,7 +915,7 @@ span.listLv4:before,
 #sub .content_wrap .content .sub5_3 .top .tit{position: absolute; top:175px; left:45.5%;}
 #sub .content_wrap .content .sub5_3 .top .tit h3{margin-bottom: 32px;}
 #sub .content_wrap .content .sub5_3 .top .tit h3 img{display: block;}
-#sub .content_wrap .content .sub5_3 .top .tit p{font-size:30px; color: #111; font-weight: 300; line-height: 44px; word-break: keep-all;}
+#sub .content_wrap .content .sub5_3 .top .tit p{font-size:30px; color: #111; font-weight: 300; line-height: 44px; word-break: keep-all; letter-spacing: -2px;}
 #sub .content_wrap .content .sub5_3 .top .tit p span{font-weight: 500;}
 #sub .content_wrap .content .sub5_3 .top::after{content: ''; width: 1920px; height: 500px; position: absolute; top:0; left: 50%; margin-left: -960px; background: url(../images/sub/bg3.jpg)no-repeat; z-index: -1;}
 #sub .content_wrap .content .sub5_3 .box{margin-bottom: 58px; padding-bottom: 58px; border-bottom: 1px solid #ddd;}
@@ -1034,5 +1034,71 @@ span.listLv4:before,
     #sub .content_wrap .content .sub5_3 .box .right{float: none; width: 100%;}
     #sub .content_wrap .content .sub5_3 .box .left{margin-bottom: 40px;}
     #sub .content_wrap .content .sub5_3 .box .left strong{font-size: 48px;}
+
+}
+
+/* 진료시간안내 */
+#sub .content_wrap .content .sub4_1 .table_box{margin-bottom: 35px;}
+#sub .content_wrap .content .sub4_1 .table_box .table tbody tr td.tit{border-bottom: 1px solid #666;}
+#sub .content_wrap .content .sub4_1 .table_box .table tbody tr td.br{border-right: 1px solid #666;}
+#sub .content_wrap .content .sub4_1 .table_box .table tbody tr td.bb{border-bottom: 1px solid #666;}
+#sub .content_wrap .content .sub4_1 .listLv{margin:0 0 33px 101px;}
+#sub .content_wrap .content .sub4_1 .img-box{margin-top: 60px; position: relative;}
+#sub .content_wrap .content .sub4_1 .img-box img{display: block; max-width: 750px; width: 100%; margin: 0 auto;}
+#sub .content_wrap .content .sub4_1 .img-box .zoom-view{display: none; position: absolute; bottom: -58px; right: 0px; width: 42px; height: 42px; background: url(../images/common/zoom-view.png) no-repeat; background-size: 42px 42px;}
+
+@media (max-width: 1199px) {
+
+    #sub .content_wrap .content .sub4_1 .listLv{margin: 0 0 40px 0;}
+
+}
+
+@media (max-width: 768px) {
+
+    #sub .content_wrap .content .sub4_1 .img-box .zoom-view{display: block;}
+
+}
+
+/* 영상의학센터 */
+#sub .content_wrap .content .sub2_7{margin-top: -64px;}
+#sub .content_wrap .content .sub2_7 .box{position: relative; /*min-height: 570px;*/ margin-bottom: 100px;}
+#sub .content_wrap .content .sub2_7 .box:last-child{margin-bottom: 0;}
+#sub .content_wrap .content .sub2_7 .box .box2{display: flex; margin-bottom: 50px;}
+#sub .content_wrap .content .sub2_7 .box .box2 .img{flex: 1; /*width: 700px; height: 400px;*/}
+/*
+#sub .content_wrap .content .sub2_7 .box2 .img_box .img{width: 467px; height: 401px;}
+*/
+#sub .content_wrap .content .sub2_7 .box .img_box{position: relative; padding: 0 0 40px; margin-bottom: 23px;}
+#sub .content_wrap .content .sub2_7 .box .img_box::after{content: ''; position: absolute; top:50px; /*bottom: 412px;*/ left: 50%; bottom: 0; margin-left: -960px; width: 1920px; /*height: 544px;*/ /*padding-top: 38.9%;*/ background: #f5f5f5; z-index: -1;}
+#sub .content_wrap .content .sub2_7 .box .img_box .img img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#sub .content_wrap .content .sub2_7 .box h3{margin-bottom: 29px; font-size: 2.4rem; font-weight: 600; color: #111;}
+#sub .content_wrap .content .sub2_7 .box p{font-size: 1.6rem; color: #111; line-height: 24px;}
+/*
+#sub .content_wrap .content .sub2_7 .box:not(:first-child){margin: 95px 0 0;}
+*/
+#sub .content_wrap .content .sub2_7 .listLv{margin: 8px 0 37px 50px;}
+
+@media (max-width: 1199px) {
+
+    #sub .content_wrap .content .sub2_7 .box{margin-bottom: 50px;}
+
+}
+
+@media (max-width: 1024px) {
+
+    #sub .content_wrap .content .sub2_7 .listLv{margin: 8px 0 37px 40px;}
+
+}
+
+@media (max-width: 480px) {
+
+    #sub .content_wrap .content .sub2_7{margin-top: 0;}
+
+}
+
+@media (max-width: 414px) {
+
+    #sub .content_wrap .content .sub2_7 .box .box2{flex-wrap: wrap;}
+    #sub .content_wrap .content .sub2_7 .box .box2 .img{flex:none; width: 100%;}
 
 }
