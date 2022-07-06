@@ -146,7 +146,7 @@ p.listLv:before,
 div.listLv:before,
 span.listLv:before,
 .listLv >li:before,
-.listLv >dt:before{top: 14px;}
+.listLv >dt:before{top: 16px;}
 
 /* listLv2 */
 .listLv >li > .listLv2{margin-top: 20px;}
