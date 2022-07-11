@@ -908,6 +908,15 @@ span.listLv4:before,
 
 /* 야간진료과 */
 #sub .content_wrap .content .sub1_8 img{display: block; width: 100%;}
+#sub .content_wrap .content .sub1_8 .mobile{display: none;}
+
+@media (max-width: 480px) {
+
+    #sub .content_wrap .content .sub1_8{margin-bottom: -20px;}
+    #sub .content_wrap .content .sub1_8 .pc{display: none;}
+    #sub .content_wrap .content .sub1_8 .mobile{display: block;}
+
+}
 
 /* 연혁 */
 #sub .content_wrap .content .sub5_3{margin-top: -13px;}
