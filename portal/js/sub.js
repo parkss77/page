@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     $('.sub5_3 .slick').slick({
         variableWidth: false,
-        autoplay: true,
+        autoplay: false,
         arrows: true,
         dots: true,
         accessibility: true,
@@ -18,12 +18,8 @@ $(document).ready(function() {
         slidesToScroll: 1,
         pauseOnHover: false,
         speed: 1000,
+        fade: true,
         autoplaySpeed: 5500
     });
-
-
-
-
-
 
 });

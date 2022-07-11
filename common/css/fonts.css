@@ -53,3 +53,21 @@
         url(fonts/Roboto-Bold.woff) format('woff'),
         url(fonts/Roboto-Bold.otf) format('opentype');
 }
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    font-style: normal;
+    font-weight: 800;
+    src: url(fonts/NanumSquareRoundEB.woff2) format('woff2'),
+        url(fonts/NanumSquareRoundEB.woff) format('woff'),
+        url(fonts/NanumSquareRoundEB.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/NanumSquareRoundR.woff2) format('woff2'),
+        url(fonts/NanumSquareRoundR.woff) format('woff'),
+        url(fonts/NanumSquareRoundR.otf) format('opentype');
+}

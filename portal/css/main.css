@@ -152,6 +152,7 @@ main.pd{padding-top: 100px;}
     #section2 .left dd{font-size: 16px;}
     #section2 .left .view{width: 60px; height: 60px;}
     #section2 .left .view::after{top: 16px; left: 16px; transform: scale(.8);}
+    #section2 .left .view:hover::after{top: 16px; left: 16px; transform: scale(.8);}
 
     #section2 .right{width: calc(100% - 346px);}
     #section2 .right .search_box img{transform: scale(.8); left: -282px; }
@@ -175,7 +176,8 @@ main.pd{padding-top: 100px;}
 
     #section2 .right.effect{animation: effect2  2s .1s both;}
     #section2{margin-top: -150px;}
-    #section2 .left{position: relative; width: 100%; top:0;}
+    #section2 .left{position: relative; width: 100%; height: 383px; top:0;}
+    #section2 .left .view{bottom: 20px;}
     #section2 .left::before{left:-20px; right: -20px;}
     #section2 .right{opacity: 0; float: none; width: 100%; padding: 64px 0 64px 255px;}
     #section2 .right::before{left:-20px; right: -20px;}
@@ -193,6 +195,12 @@ main.pd{padding-top: 100px;}
 
     #section2 .right{padding: 20px 0;}
     #section2 .right .search_box img{display: none;}
+
+}
+
+@media (max-width: 360px) {
+
+    #section2 .left .view{right: -5px; transform: scale(0.8);}
 
 }
 
@@ -227,11 +235,14 @@ main.pd{padding-top: 100px;}
 @media (max-width: 1024px) {
 
     #section3 .list li{width: 140px;}
+    #section3 .list li.info a::after{}
+    #section3 .list li a:hover::after{transform: scale(0.9) translateX(-50%);}
     #section3{padding: 50px 0;}
 
 }
 
 #section4{position: relative; padding: 100px 0 95px;}
+#section4::before{content: ''; position: absolute; left:50%; bottom: 0; width: 1920px; height: 300px; background: #fff; margin-left: -960px;}
 #section4::after{content: ''; position: absolute; top:0; left: 50%; margin-left: -960px; width: 1920px; height: 100%; background: url(../images/main/bg.jpg)no-repeat fixed; z-index: -1;}
 #section4 .top{margin-bottom: 96px; text-align: center;}
 #section4 .top h3{margin-bottom: 26px; display: inline-block; position: relative; font-size: 36px; font-weight: 500; color: #fff;}
@@ -244,13 +255,20 @@ main.pd{padding-top: 100px;}
 #section4 ul.list li a h4{margin-bottom: 26px; height: 88px; line-height: 92px; border-bottom: 1px solid #ddd; font-size: 20px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 #section4 ul.list li a p{margin-bottom: 36px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 48px; line-height: 24px; overflow: hidden; text-overflow: ellipsis;}
 #section4 ul.list li a span{font-weight: 300; color: #ccc;}
-#section4 .view{display: block; margin: 0 auto; width: 200px; height: 50px; line-height: 50px; font-weight: 500; text-align: center; border: 2px solid #f9f9f9; transition: all .3s; color: #f9f9f9;}
-#section4 .view:hover{background: #333;}
+#section4 .view{position: relative; display: block; margin: 0 auto; width: 200px; height: 50px; line-height: 50px; font-weight: 500; text-align: center; border: 2px solid #333; transition: all .3s; color: #111;}
+#section4 .view:hover{background: linear-gradient(45deg, #00a6ff, #1431ff); border: 0; color: #fff;}
 
 @media (max-width: 1199px) {
 
     #section4 ul.list li a{padding: 0 20px;}
     #section4 ul.list li a h4{height: 80px; line-height: 84px; font-size: 18px;}
+
+}
+
+@media (max-width: 1024px) {
+
+    #section4 ul.list li a:hover{margin-top: 0;}
+    #section4 .view:hover{border: 2px solid #333; color: #111; background: #fff;}
 
 }
 

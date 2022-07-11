@@ -23,6 +23,44 @@ $(document).ready(function() {
         $('main').removeClass('pd');
     }
 
+    /* mobile
+    var depth1 = document.querySelectorAll('.mobile_depth1 li h2 a'),
+        depth2 = document.querySelectorAll('.mobile_depth2');
+
+    for (var i = 0; i < depth1.length; i++) {
+        depth1[i].addEventListener('click', function() {
+            this.parentElement.nextElement.style.display = "block";
+            this.classList.add('active');
+        });
+    }
+*/
+
+    $('.mobile_box .mobile_depth1 li h2 a').click(function() {
+        if ($(this).hasClass('active')) {
+            $('.mobile_box .mobile_depth1 li h2 a').removeClass('active');
+            $('.mobile_depth2').slideUp();
+        } else {
+            $('.mobile_box .mobile_depth1 li h2 a').removeClass('active');
+            $(this).addClass('active');
+            $('.mobile_depth2').slideUp();
+            $(this).parent().next('.mobile_depth2').slideDown();
+        }
+    });
+    $('#header .mobile_btn').click(function() {
+        $('body').addClass('fixed');
+        $('.mobile_bg').fadeIn();
+        $('.mobile_box').animate({
+            right: 0
+        }, 500);
+    });
+    $('.mobile_box .mobile_close').click(function() {
+        $('body').removeClass('fixed');
+        $('.mobile_bg').fadeOut();
+        $('.mobile_box').animate({
+            right: -3000
+        }, 500);
+    });
+
     /* sitemap */
     var btn = document.querySelector('.sitemap_btn'),
         sitemap = document.querySelector('.sitemap_box'),
